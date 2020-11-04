@@ -1,0 +1,1 @@
+patchlogger	ALL = NOPASSWD:/opt/patchlogger/APTUpdates.sh
