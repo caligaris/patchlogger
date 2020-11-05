@@ -18,4 +18,7 @@ sudo bash -c "echo '0 */12 * * * patchlogger python /opt/patchlogger/patchInvent
 # Logrotate setup
 sudo bash -c "echo '0 */12 * * * patchlogger /usr/sbin/logrotate -s /opt/patchlogger/patchlogger-status /opt/patchlogger/patchlogrotate.conf > /dev/null 2>&1' >> /etc/cron.d/patchlogger"
 
+# Do an initial run
+sudo -u patchlogger bash -c 'python /opt/patchlogger/patchInventory.py'
+
 
