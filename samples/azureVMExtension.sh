@@ -10,4 +10,4 @@ az vm extension set \
   --vm-name $vmName \
   --name customScript \
   --publisher Microsoft.Azure.Extensions \
-  --protected-settings '{"fileUris": ["https://github.com/caligaris/patchlogger/releases/download/v0.0.1-alpha.2/patchlogger.tar.gz"],"commandToExecute": "sudo tar zxvf patchlogger.tar.gz && sh ./patchloggerSetup.sh"}'
+  --protected-settings '{"fileUris": ["https://github.com/caligaris/patchlogger/releases/download/v0.0.1-alpha.3/patchlogger.tar.gz"],"commandToExecute": "sudo tar zxvf patchlogger.tar.gz && sh ./patchloggerSetup.sh"}'

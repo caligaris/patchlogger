@@ -44,7 +44,7 @@ logger = Log()
 updateAptCmd = 'sudo /opt/patchlogger/APTUpdates.sh'
 subprocess.call(updateAptCmd, shell=True)
 # use apt-get to get list of packages
-cmd = 'LANG=en_US.UTF8 apt-get -s dist-upgrade | grep "^Inst"'
+cmd = 'sudo LANG=en_US.UTF8 apt-get -s dist-upgrade | grep "^Inst"'
 process = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
 out, err = process.communicate()
 
